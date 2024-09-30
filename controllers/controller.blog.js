@@ -29,6 +29,8 @@ export const editBlog = async (req, res) => {
 //all blogs with mongo
 export const viewAllBlogs = async (req, res) => {
   try {
+    console.log("inside view all blogs");
+    console.log("Name",blog.db.name);
     const found = await blog.find();
     res.json({ message: "Blogs Found.", data: found });
   } catch (error) {

@@ -54,7 +54,8 @@ const PORT = process.env.PORT || 6969;
 // app.listen(PORT, () => {
 //   console.log("App listening on port", PORT);
 // });
-const MONGO_DB_URL = "mongodb+srv://childcity:jHyj24GFSrgKGYyx@cluster0.k4da7we.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const MONGO_DB_URL =
+  "mongodb+srv://childcity:jHyj24GFSrgKGYyx@cluster0.k4da7we.mongodb.net/childCity?retryWrites=true&w=majority&appName=Cluster0";
 mongoose.connect(MONGO_DB_URL).then(() => {
-  app.listen(PORT, () => console.log("We are live with DB (maybe)"));
+  app.listen(PORT, () => console.log("We are live with DB"));
 });

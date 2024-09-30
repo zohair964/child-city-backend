@@ -56,6 +56,7 @@ export const changeOrder = async (req, res) => {
 //all category with mongo
 export const viewAllCategories = async (req, res) => {
   try {
+    console.log("inside get all category");
     const found = await category
       .aggregate([
         {
